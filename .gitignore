@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.env
+*.log
+secrets/
+credentials/
+outputs/
+generated_images/
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.heic
+*.mp4
+*.mov

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Real Estate Photo Editing"
+  short_description: "Truth-preserving workflow for real-estate listing photo cleanup and optional local finishing."
+  default_prompt: "Use $real-estate-photo-editing to review listing photos, choose a truthful editing lane, preserve property facts, and stop for human review before public use."
