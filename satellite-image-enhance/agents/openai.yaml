@@ -1,0 +1,4 @@
+interface:
+  display_name: "Satellite Image Enhancement"
+  short_description: "Accuracy-preserving workflow for satellite and aerial imagery enhancement, cloud removal, contrast stretching, and optional local finishing."
+  default_prompt: "Use $satellite-image-enhance to review satellite imagery, choose a safe enhancement lane, preserve geographic accuracy and spectral fidelity, and stop for human review before public or operational use."
