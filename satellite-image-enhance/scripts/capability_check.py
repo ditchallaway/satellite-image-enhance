@@ -25,9 +25,8 @@ def main() -> int:
         path = shutil.which(binary)
         if path:
             print(f"{binary}: optional found at {path}")
-            break
-    else:
-        print("gdal tools: optional missing")
+        else:
+            print(f"{binary}: optional missing")
 
     if not ok:
         print("Install optional local script dependencies with:")
