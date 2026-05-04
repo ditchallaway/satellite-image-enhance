@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check optional local capabilities for the public real-estate-photo-editing skill."""
+"""Check optional local capabilities for the public satellite-image-enhance skill."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ PACKAGES = ["PIL", "numpy", "cv2"]
 
 
 def main() -> int:
-    print("real-estate-photo-editing capability check")
+    print("satellite-image-enhance capability check")
     print(f"python: {sys.version.split()[0]}")
 
     ok = True
@@ -21,13 +21,12 @@ def main() -> int:
         print(f"{package}: {'ok' if found else 'missing'}")
         ok = ok and found
 
-    for binary in ["darktable-cli", "darktable-cli.exe"]:
+    for binary in ["gdal_translate", "gdalinfo"]:
         path = shutil.which(binary)
         if path:
             print(f"{binary}: optional found at {path}")
-            break
-    else:
-        print("darktable-cli: optional missing")
+        else:
+            print(f"{binary}: optional missing")
 
     if not ok:
         print("Install optional local script dependencies with:")

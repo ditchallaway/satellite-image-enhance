@@ -1,0 +1,19 @@
+{
+  "input_dir": "/absolute/path/to/source-folder",
+  "output_root": "/absolute/path/to/source-folder/Codex enhanced",
+  "output_layout": "variant_dirs",
+  "variants": ["enhance_standard", "enhance_vivid"],
+  "images": {
+    "urban_scene_01.jpg": {
+      "scene": "urban"
+    },
+    "forest_scene_01.jpg": {
+      "scene": "forest",
+      "boost_contrast": true
+    },
+    "coastal_scene_01.jpg": {
+      "scene": "coastal",
+      "restrained": true
+    }
+  }
+}

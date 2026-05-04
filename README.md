@@ -1,55 +1,55 @@
-# Real Estate Photo Editing Skill
+# Satellite Image Enhancement Skill
 
 GitHub URL after publishing:
 
-`https://github.com/yyxone/real-estate-photo-editing`
+`https://github.com/ditchallaway/satellite-image-enhance`
 
 This repository packages one installable agent skill:
 
-`real-estate-photo-editing/`
+`satellite-image-enhance/`
 
-It is an agent workflow skill, not a standalone photo editor app. It teaches Codex or another compatible agent how to improve real-estate listing photos while preserving truthful property appearance.
+It is an agent workflow skill, not a standalone image processing app. It teaches Codex or another compatible agent how to enhance satellite and aerial imagery while preserving geographic accuracy and spectral fidelity.
 
 ## What It Does
 
-- Chooses a safe editing lane for listing photos.
-- Prioritizes truthful real-estate presentation over dramatic redesign.
-- Defines guardrails for clutter removal, brightness, white balance, window handling, geometry, and AI image edits.
+- Chooses a safe enhancement lane for satellite imagery.
+- Prioritizes geographic accuracy and spectral fidelity over dramatic visual effect.
+- Defines guardrails for cloud removal, contrast enhancement, spectral band merging, and AI image edits.
 - Provides optional deterministic local batch scripts for conventional finishing.
-- Requires review before broad batch work and rejects edits that invent property details.
+- Requires review before broad batch work and rejects edits that invent geographic features.
 
 ## What It Does Not Do
 
 - It does not include a hosted app or GUI.
-- It does not include real listing photos.
+- It does not include real satellite imagery.
 - It does not include API keys, cloud credentials, or local model files.
 - It does not guarantee that another computer has the same native image-editing tools.
-- It does not allow fake renovations, fake staging, or hiding material property defects.
+- It does not allow fabricating terrain, inventing geographic features, or hiding crucial topological data.
 
 ## Install In Codex
 
 1. Clone or download this repo.
 2. Copy the nested folder:
 
-   `real-estate-photo-editing/`
+   `satellite-image-enhance/`
 
 3. Paste it into your Codex skills directory:
 
-   `~/.codex/skills/real-estate-photo-editing/`
+   `~/.codex/skills/satellite-image-enhance/`
 
 4. Restart Codex or refresh its skill index if your host requires it.
 5. Ask Codex to read:
 
-   `https://github.com/yyxone/real-estate-photo-editing`
+   `https://github.com/ditchallaway/satellite-image-enhance`
 
 Minimal handoff prompt for another Codex:
 
 ```text
-Install and use the real-estate-photo-editing skill from:
-https://github.com/yyxone/real-estate-photo-editing
+Install and use the satellite-image-enhance skill from:
+https://github.com/ditchallaway/satellite-image-enhance
 
 The installable skill folder is:
-real-estate-photo-editing/
+satellite-image-enhance/
 ```
 
 ## Required Setup
@@ -57,8 +57,8 @@ real-estate-photo-editing/
 Required:
 
 - A compatible agent host that can read local images and follow a `SKILL.md` workflow.
-- Local source photos supplied by the user.
-- Human review before using edited photos publicly.
+- Local source imagery supplied by the user.
+- Human review before using enhanced imagery publicly.
 
 Required for the optional local batch scripts:
 
@@ -80,27 +80,27 @@ Optional:
 - A native image-editing tool inside the agent host.
 - A local deterministic finishing workflow.
 - A local or cloud image model configured by the user.
-- Darktable or other photo tools, if your own workflow uses them.
+- GDAL, QGIS, or other geospatial tools, if your own workflow uses them.
 
 These are optional. The skill does not assume your machine has the author's local paths, credentials, or model setup.
 
 ## Safety Rules
 
-- Review the folder before editing a batch.
+- Review the folder before processing a batch.
 - Do not overwrite originals unless explicitly requested.
-- Do not publish generated edits without human review.
-- For remove-only requests, change only the named object or clutter.
-- Reject edits that alter room geometry, fixed finishes, appliances, views, lighting direction, or material property facts.
-- Never use photo editing to hide defects that matter to buyers, renters, or agents.
+- Do not publish generated enhancements without human review.
+- For targeted enhancement requests, change only the named band or region.
+- Reject edits that invent geographic features, alter terrain elevation data, distort map projections, or hide crucial topological information.
+- Never use image processing to conceal geographic or environmental data that matters to analysts, researchers, or decision-makers.
 
 ## Accuracy And Input Quality
 
-Editing quality depends on the source photos:
+Enhancement quality depends on the source imagery:
 
-- Clear, well-lit, non-blurry photos give better results.
-- Consistent angles and room coverage make batch decisions easier.
-- Very dark, tilted, cluttered, low-resolution, or heavily compressed photos reduce confidence.
-- The agent may use visible image content, filenames, folder names, and user instructions to understand rooms and priorities.
+- High-resolution, low-noise, cloud-free scenes give better results.
+- Consistent acquisition parameters and scene coverage make batch decisions easier.
+- Very cloudy, low-resolution, heavily compressed, or radiometrically degraded imagery reduces confidence.
+- The agent may use visible image content, filenames, folder names, and user instructions to understand scene types and priorities.
 - External permissions, such as cloud model access or local file access, only apply after the user grants them.
 
 ## Checks
@@ -108,9 +108,9 @@ Editing quality depends on the source photos:
 Run these before sharing changes:
 
 ```bash
-python real-estate-photo-editing/scripts/privacy_scan.py --root .
-python real-estate-photo-editing/scripts/capability_check.py
-python -m py_compile real-estate-photo-editing/scripts/*.py
+python satellite-image-enhance/scripts/privacy_scan.py --root .
+python satellite-image-enhance/scripts/capability_check.py
+python -m py_compile satellite-image-enhance/scripts/*.py
 ```
 
 ## License

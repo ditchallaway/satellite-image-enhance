@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lightweight privacy scan for the public real-estate-photo-editing package."""
+"""Lightweight privacy scan for the public satellite-image-enhance package."""
 
 from __future__ import annotations
 
